@@ -1,6 +1,7 @@
 const {Client, GatewayIntentBits, ActivityType} = require("discord.js");
 const { OpenAI } = require('openai');
 const dotenv = require("dotenv").config()
+const keep_alive = require('./keep_alive.js')
 
 
 const openai = new OpenAI({
